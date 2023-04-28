@@ -1,2 +1,2 @@
-# RescuePrimeOptimiezd
-A wasmpack for rescue prime optimized (used in miden 0.5)
+# Rescue Prime Optimized
+This is a wasm version of RPO function.

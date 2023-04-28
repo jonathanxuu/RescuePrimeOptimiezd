@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>rescue-test</title>
+  </head>
+  <body>
+    <script type="module">
+      import init, {RescuePrimeOptimized,init_panic_hook} from "./pkg/rescue_prime_optimized.js";
+
+      init().then(async m => {
+        init_panic_hook()
+
+        console.log(RescuePrimeOptimized([1n,2n,3n,4n,5n,6n,7n,8n]))
+        // should output :BigUint64Array(4) : 15975159621759139720n,15720844923951376941n,16013969809933496273n,13608701685256682132n
+    }).catch(console.error);
+      </script>
+  </body>
+</html>
