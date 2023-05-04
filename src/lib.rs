@@ -1,8 +1,8 @@
 #![cfg_attr(not(feature = "std"), no_std)]
 use hash::rpo::RpoDigest;
-use wasm_bindgen::prelude::*;
-use wasm_bindgen_test::console_log;
-extern crate console_error_panic_hook;
+// use wasm_bindgen::prelude::*;
+// use wasm_bindgen_test::console_log;
+// extern crate console_error_panic_hook;
 
 #[cfg(not(feature = "std"))]
 #[cfg_attr(test, macro_use)]
@@ -106,6 +106,6 @@ pub fn as_u64(origin: RpoDigest) -> [u64; 4] {
 }
 
 // #[wasm_bindgen]
-pub fn init_panic_hook() {
-    console_error_panic_hook::set_once();
-}
+// pub fn init_panic_hook() {
+//     console_error_panic_hook::set_once();
+// }
